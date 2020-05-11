@@ -8,13 +8,27 @@
 
 import Foundation
 
-struct Book {
+struct Book : Codable {
     let id: Int
     let author: String
-    let coverImageUrl: String
+    let coverImageName: String
     let currentPage: Int
-    let fileUrl: String
+    let fileName: String
     let genreId: Int
     let pages: Int
     let title: String
+    
+    let localImageURL: String = ""
+    let localFileURL: String = ""
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case author
+        case coverImageName
+        case currentPage
+        case fileName
+        case genreId
+        case pages
+        case title
+    }
 }

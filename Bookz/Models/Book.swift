@@ -18,8 +18,8 @@ struct Book : Codable {
     let pages: Int
     let title: String
     
-    let localImageURL: String = ""
-    let localFileURL: String = ""
+    var localImageURL: String = ""
+    var localFileURL: String = ""
     
     enum CodingKeys: String, CodingKey {
         case id

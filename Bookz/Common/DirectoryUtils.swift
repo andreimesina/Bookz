@@ -11,7 +11,8 @@ import Foundation
 class DirectoryUtils {
     
     static func getAppSupportDirectoryPath() -> String? {
-        guard let appSupportDirectory = NSSearchPathForDirectoriesInDomains(                .applicationSupportDirectory,
+        guard let appSupportDirectory = NSSearchPathForDirectoriesInDomains(
+            .applicationSupportDirectory,
             .userDomainMask,
             true
         ).first else {

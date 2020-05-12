@@ -8,9 +8,16 @@
 
 import Foundation
 
-struct Note {
+struct Note : Codable {
     let id: Int
     let bookId: Int
     let note: String
     let page: Int
+    
+    enum CodingKeys: String, CodingKey {
+        case id
+        case bookId
+        case note
+        case page
+    }
 }

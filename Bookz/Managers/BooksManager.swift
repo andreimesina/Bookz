@@ -10,6 +10,10 @@ import Foundation
 import Firebase
 import FirebaseFirestoreSwift
 
+/**
+ This component is responsible for handling
+ the data layer corresponding to the [Book] model and its files.
+ */
 class BooksManager {
     
     let firestore = Firestore.firestore()
@@ -20,6 +24,9 @@ class BooksManager {
     let baseLocalURL = DirectoryUtils.getAppSupportDirectoryURL()
     let booksDirectoryPrefix = "books/pdf/"
     
+    /**
+     Fetches an [Array] containing all the [Book]s data.
+     */
     func getAllBooks(completion: @escaping (Array<Book>?) -> Void) {
         var books = Array<Book>()
         
@@ -50,7 +57,11 @@ class BooksManager {
             }
     }
     
-    func getBookLocalURL(fileName: String, completion: @escaping (URL?) -> Void) {
+    /**
+     Downloads the book and returns the local [URL] of the PDF file,
+     or directly returns the [URL] if the book has been already downloaded before.
+     */
+    func getBookPDFLocalURL(fileName: String, completion: @escaping (URL?) -> Void) {
         // Local path of the file
         guard let localURL = baseLocalURL?
             .appendingPathComponent(booksDirectoryPrefix)

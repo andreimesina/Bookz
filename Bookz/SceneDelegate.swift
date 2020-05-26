@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // Use the UITabBarController as window root view controller.
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
-            let storyboard = UIStoryboard(name: "LaunchScreen", bundle: nil)
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let tabBarController = storyboard.instantiateViewController(identifier: "tabBarController") as UITabBarController
             
             window.rootViewController = tabBarController
@@ -60,11 +60,4 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     }
 
 
-}
-
-
-struct SceneDelegate_Previews: PreviewProvider {
-    static var previews: some View {
-        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
-    }
 }

@@ -13,9 +13,11 @@
 		713280DD246737030069E2DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713280DC246737030069E2DE /* SceneDelegate.swift */; };
 		713280E1246737050069E2DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713280E0246737050069E2DE /* Assets.xcassets */; };
 		713280E4246737050069E2DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713280E3246737050069E2DE /* Preview Assets.xcassets */; };
-		713280E7246737050069E2DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713280E5246737050069E2DE /* LaunchScreen.storyboard */; };
+		713280E7246737050069E2DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713280E5246737050069E2DE /* Main.storyboard */; };
 		713280F2246737050069E2DE /* BookzTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713280F1246737050069E2DE /* BookzTests.swift */; };
 		7175EB6C24673DA200903034 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7175EB6B24673DA200903034 /* GoogleService-Info.plist */; };
+		717F67DA247D7B120016F728 /* BookReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F67D9247D7B120016F728 /* BookReaderController.swift */; };
+		717F67DC247DBE220016F728 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 717F67DB247DBE220016F728 /* LaunchScreen.storyboard */; };
 		7185A3892467524A00C74DF3 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185A3882467524A00C74DF3 /* Book.swift */; };
 		7185A38B2467525E00C74DF3 /* Genre.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185A38A2467525E00C74DF3 /* Genre.swift */; };
 		7185A38D2467526D00C74DF3 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185A38C2467526D00C74DF3 /* Note.swift */; };
@@ -25,7 +27,6 @@
 		7185A3972467696D00C74DF3 /* BooksController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185A3962467696D00C74DF3 /* BooksController.swift */; };
 		7185A3992467697F00C74DF3 /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185A3982467697F00C74DF3 /* NotesController.swift */; };
 		71DF050A2468767F00A096F2 /* DirectoryUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF05092468767F00A096F2 /* DirectoryUtils.swift */; };
-		71DF050C2468A81200A096F2 /* BookReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71DF050B2468A81200A096F2 /* BookReaderController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,12 +47,14 @@
 		713280DC246737030069E2DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		713280E0246737050069E2DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		713280E3246737050069E2DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		713280E6246737050069E2DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		713280E6246737050069E2DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		713280E8246737050069E2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		713280ED246737050069E2DE /* BookzTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BookzTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		713280F1246737050069E2DE /* BookzTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookzTests.swift; sourceTree = "<group>"; };
 		713280F3246737050069E2DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7175EB6B24673DA200903034 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		717F67D9247D7B120016F728 /* BookReaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReaderController.swift; sourceTree = "<group>"; };
+		717F67DB247DBE220016F728 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7185A3882467524A00C74DF3 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		7185A38A2467525E00C74DF3 /* Genre.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Genre.swift; sourceTree = "<group>"; };
 		7185A38C2467526D00C74DF3 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		7185A3962467696D00C74DF3 /* BooksController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksController.swift; sourceTree = "<group>"; };
 		7185A3982467697F00C74DF3 /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
 		71DF05092468767F00A096F2 /* DirectoryUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectoryUtils.swift; sourceTree = "<group>"; };
-		71DF050B2468A81200A096F2 /* BookReaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookReaderController.swift; sourceTree = "<group>"; };
 		868526B0C8EA8B27F7C52F8B /* Pods-Bookz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bookz.release.xcconfig"; path = "Target Support Files/Pods-Bookz/Pods-Bookz.release.xcconfig"; sourceTree = "<group>"; };
 		D62FEC1B5A0153B8ADD27F9E /* Pods_BookzTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BookzTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBB5D13DB48C99C227F1933A /* Pods_Bookz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bookz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,9 +131,9 @@
 				713280DA246737030069E2DE /* AppDelegate.swift */,
 				713280DC246737030069E2DE /* SceneDelegate.swift */,
 				713280E0246737050069E2DE /* Assets.xcassets */,
-				713280E5246737050069E2DE /* LaunchScreen.storyboard */,
 				713280E8246737050069E2DE /* Info.plist */,
 				713280E2246737050069E2DE /* Preview Content */,
+				717F67DB247DBE220016F728 /* LaunchScreen.storyboard */,
 			);
 			path = Bookz;
 			sourceTree = "<group>";
@@ -178,7 +180,7 @@
 			children = (
 				7185A3982467697F00C74DF3 /* NotesController.swift */,
 				7185A3962467696D00C74DF3 /* BooksController.swift */,
-				71DF050B2468A81200A096F2 /* BookReaderController.swift */,
+				717F67D9247D7B120016F728 /* BookReaderController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +188,7 @@
 		7185A387246751BF00C74DF3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				713280E5246737050069E2DE /* Main.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -293,9 +296,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713280E7246737050069E2DE /* LaunchScreen.storyboard in Resources */,
+				713280E7246737050069E2DE /* Main.storyboard in Resources */,
 				7175EB6C24673DA200903034 /* GoogleService-Info.plist in Resources */,
 				713280E4246737050069E2DE /* Preview Assets.xcassets in Resources */,
+				717F67DC247DBE220016F728 /* LaunchScreen.storyboard in Resources */,
 				713280E1246737050069E2DE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -381,7 +385,7 @@
 				7185A3892467524A00C74DF3 /* Book.swift in Sources */,
 				7185A3992467697F00C74DF3 /* NotesController.swift in Sources */,
 				713280DB246737030069E2DE /* AppDelegate.swift in Sources */,
-				71DF050C2468A81200A096F2 /* BookReaderController.swift in Sources */,
+				717F67DA247D7B120016F728 /* BookReaderController.swift in Sources */,
 				713280DD246737030069E2DE /* SceneDelegate.swift in Sources */,
 				7185A3972467696D00C74DF3 /* BooksController.swift in Sources */,
 				71DF050A2468767F00A096F2 /* DirectoryUtils.swift in Sources */,
@@ -412,12 +416,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		713280E5246737050069E2DE /* LaunchScreen.storyboard */ = {
+		713280E5246737050069E2DE /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				713280E6246737050069E2DE /* Base */,
 			);
-			name = LaunchScreen.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="0jY-1U-PwL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notes-->
+        <scene sceneID="HXN-Se-dcM">
+            <objects>
+                <viewController title="Notes" id="i3T-O0-caK" customClass="NotesController" customModule="Bookz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4gA-uL-WSq" userLabel="Screen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="x0l-l9-MVq">
+                                <rect key="frame" x="0.0" y="67" width="414" height="746"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rnW-jL-Y8A"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notes" image="text.badge.star" catalog="system" id="ow3-g9-5en"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fHf-gZ-k4E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.8550724637682" y="1541.5178571428571"/>
+        </scene>
+        <!--Books-->
+        <scene sceneID="Bcf-Sg-k2g">
+            <objects>
+                <viewController title="Books" id="HCu-HC-apI" userLabel="Books" customClass="BooksController" customModule="Bookz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O4y-Ni-k7x" userLabel="Screen">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fJw-Mm-8Jv">
+                                <rect key="frame" x="0.0" y="114" width="414" height="699"/>
+                                <sections/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqd-gU-BQ9" userLabel="Toolbar">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1W-oX-Hi9">
+                                        <rect key="frame" x="356" y="4" width="50" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="iq3-s1-fKS"/>
+                                        </constraints>
+                                        <state key="normal" image="plus" catalog="system"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bookz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="18D-qt-BJv">
+                                        <rect key="frame" x="50" y="8" width="314" height="54"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="36"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="8AZ-DS-XoV"/>
+                                    <constraint firstItem="xwY-x4-0wm" firstAttribute="trailing" secondItem="N1W-oX-Hi9" secondAttribute="trailing" constant="8" id="AO2-bs-CdN"/>
+                                    <constraint firstItem="xwY-x4-0wm" firstAttribute="trailing" secondItem="18D-qt-BJv" secondAttribute="trailing" constant="50" id="Aja-gd-tqz"/>
+                                    <constraint firstItem="xwY-x4-0wm" firstAttribute="bottom" secondItem="N1W-oX-Hi9" secondAttribute="bottom" constant="4" id="GcN-mI-5iq"/>
+                                    <constraint firstItem="xwY-x4-0wm" firstAttribute="bottom" secondItem="18D-qt-BJv" secondAttribute="bottom" constant="8" id="Ugv-EX-2NV"/>
+                                    <constraint firstItem="N1W-oX-Hi9" firstAttribute="top" secondItem="xwY-x4-0wm" secondAttribute="top" constant="4" id="WKM-rL-gry"/>
+                                    <constraint firstItem="18D-qt-BJv" firstAttribute="top" secondItem="xwY-x4-0wm" secondAttribute="top" constant="8" id="l3L-Ef-1i3"/>
+                                    <constraint firstItem="18D-qt-BJv" firstAttribute="leading" secondItem="xwY-x4-0wm" secondAttribute="leading" constant="50" id="pZ7-EB-iHq"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="xwY-x4-0wm"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fJw-Mm-8Jv" firstAttribute="bottom" secondItem="r8b-3u-pYk" secondAttribute="bottom" id="6mz-pm-yxX"/>
+                            <constraint firstItem="aqd-gU-BQ9" firstAttribute="trailing" secondItem="r8b-3u-pYk" secondAttribute="trailing" id="7Pg-Dd-dui"/>
+                            <constraint firstItem="fJw-Mm-8Jv" firstAttribute="trailing" secondItem="r8b-3u-pYk" secondAttribute="trailing" id="B8t-vr-epx"/>
+                            <constraint firstItem="aqd-gU-BQ9" firstAttribute="leading" secondItem="r8b-3u-pYk" secondAttribute="leading" id="aaO-Yf-2ji"/>
+                            <constraint firstItem="fJw-Mm-8Jv" firstAttribute="top" secondItem="aqd-gU-BQ9" secondAttribute="bottom" id="fKx-pE-PwV"/>
+                            <constraint firstItem="aqd-gU-BQ9" firstAttribute="top" secondItem="r8b-3u-pYk" secondAttribute="top" id="iqH-NY-LC3"/>
+                            <constraint firstItem="fJw-Mm-8Jv" firstAttribute="leading" secondItem="r8b-3u-pYk" secondAttribute="leading" id="vwM-HP-UxG"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="r8b-3u-pYk"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Books" image="book" catalog="system" id="33n-pB-nqV"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhB-mQ-cpf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1189.8550724637682" y="673.66071428571422"/>
+        </scene>
+        <!--Book Reader Controller-->
+        <scene sceneID="WfM-91-2y3">
+            <objects>
+                <viewController id="9vI-5J-PCh" customClass="BookReaderController" customModule="Bookz" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpz-XR-wYD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Qfy-fa-Njv"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cO3-R7-sBa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="674"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="8ZR-nE-31z">
+            <objects>
+                <tabBarController storyboardIdentifier="tabBarController" id="0jY-1U-PwL" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Qez-D8-6CW"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="CL0-es-3vp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="HCu-HC-apI" kind="relationship" relationship="viewControllers" id="mPI-BA-nSr"/>
+                        <segue destination="i3T-O0-caK" kind="relationship" relationship="viewControllers" id="4b2-nI-aA2"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iFG-Tb-dhR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-100" y="1140"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="book" catalog="system" width="128" height="101"/>
+        <image name="plus" catalog="system" width="128" height="113"/>
+        <image name="text.badge.star" catalog="system" width="128" height="109"/>
+    </resources>
+</document>

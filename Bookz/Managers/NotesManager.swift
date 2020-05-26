@@ -21,8 +21,8 @@ class NotesManager {
     /**
      Fetches an [Array] containing all the [Note]s data.
      */
-    func getAllNotes(completion: @escaping (Array<Note>?) -> Void) {
-        var notes = Array<Note>()
+    func getAllNotes(completion: @escaping ([Note]?) -> Void) {
+        var notes = [Note]()
         
         firestore.collection("notes")
             .getDocuments() { querySnapshot, error in

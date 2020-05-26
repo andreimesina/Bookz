@@ -28,8 +28,8 @@ class BooksManager {
     /**
      Fetches an [Array] containing all the [Book]s data.
      */
-    func getAllBooks(completion: @escaping (Array<Book>?) -> Void) {
-        var books = Array<Book>()
+    func getAllBooks(completion: @escaping ([Book]?) -> Void) {
+        var books = [Book]()
         
         firestore.collection("books")
             .getDocuments() { querySnapshot, error in

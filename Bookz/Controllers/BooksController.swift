@@ -17,8 +17,8 @@ class BooksController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        var books = Array<Book>();
-        var genres = Array<Genre>();
+        var books = [Book]();
+        var genres = [Genre]();
         
         booksManager.getAllBooks { fetchedBooks in
             guard fetchedBooks != nil else {

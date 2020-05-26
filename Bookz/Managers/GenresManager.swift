@@ -21,8 +21,8 @@ class GenresManager {
     /**
      Fetches an [Array] containing all the [Genre]s data.
      */
-    func getAllGenres(completion: @escaping (Array<Genre>?) -> Void) {
-        var genres = Array<Genre>()
+    func getAllGenres(completion: @escaping ([Genre]?) -> Void) {
+        var genres = [Genre]()
         
         firestore.collection("genres")
             .getDocuments() { querySnapshot, error in

@@ -13,11 +13,4 @@ struct Note : Codable {
     let bookId: Int
     let note: String
     let page: Int
-    
-    enum CodingKeys: String, CodingKey {
-        case id
-        case bookId
-        case note
-        case page
-    }
 }

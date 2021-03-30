@@ -51,4 +51,13 @@ class NotesManager {
             }
     }
     
+    func addNote(note: Note) {
+        do {
+            try firestore.collection("notes").addDocument(from: note) { err in
+            }
+        } catch let error {
+            print("Error writing book to Firestore: \(error)")
+        }
+    }
+    
 }

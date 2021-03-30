@@ -62,7 +62,7 @@ class BooksManager {
      Downloads the book and returns the local [URL] of the PDF file,
      or directly returns the [URL] if the book has been already downloaded before.
      */
-    func getBookPDFLocalURL(fileName: String, completion: @escaping (URL?) -> Void) {
+    func getBookPdfLocalURL(fileName: String, completion: @escaping (URL?) -> Void) {
         // Local path of the file
         guard let localURL = baseLocalURL?
             .appendingPathComponent(booksDirectoryPrefix)
@@ -120,6 +120,33 @@ class BooksManager {
             if let url = url {
                 print("Download Task success: \(url)")
                 completion(url)
+            }
+        }
+    }
+    
+    func addBook(book: Book, completion: @escaping (String?) -> Void) {
+        do {
+            try firestore.collection("books").addDocument(from: book) { err in
+                if let err = err {
+                    completion(err.localizedDescription)
+                } else {
+                    completion(nil)
+                }
+            }
+        } catch let error {
+            completion(error.localizedDescription)
+            print("Error writing book to Firestore: \(error)")
+        }
+    }
+    
+    func uploadPdf(localURL: URL, filename: String, completion: @escaping (String?) -> Void) {
+        let booksRef = storageReference.child("\(booksDirectoryPrefix)\(filename)")
+        
+        booksRef.putFile(from: localURL, metadata: nil) { metadata, error in
+            if let error = error {
+                completion(error.localizedDescription)
+            } else {
+                completion(nil)
             }
         }
     }
